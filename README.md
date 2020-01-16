@@ -5,10 +5,13 @@ Simple, not efficient, dumb and why.
 I just made it coz i was bored. It actually works pretty fast with relatively large datasets that containt pretty small ranges.
 # big O
 So since it have to iterate over array twice, and then over biggest number (B), it's O notation is:
+
 __O(B*(2n))__
 # tests
 I'm running i5-5470 CPU (non OC) with 16GB of 2800MHz RAM with __64b python 3.8.1.__
+
 Obviously, I disabled `print(result)` because in most occasions, printing whole array takes a lot more than actually sorting it.
+
 So i ran few tests to determine best use case scenario for this algo _(sorted by fastest)_:
 
 | # of Numbers | Biggest Number | Time |
@@ -25,7 +28,9 @@ So i ran few tests to determine best use case scenario for this algo _(sorted by
 | 1 000 000 000 | 10 | 22.851min | 
 
 _*couldn't measure even with 15 decimal points_
+
 So by calculating t/O(B*(2n)), we've got approximate speed of 17.3M sorts per second. Not bad I guess?
+
 # things i observed
 So running a few tests, i observed following:
 - With relatively large datasets with small number range, you get pretty decent speeds
