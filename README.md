@@ -8,7 +8,7 @@ So since it have to iterate over array twice, and then over biggest number (B), 
 
 __O(B*(2n))__
 # tests
-I'm running i5-5470 CPU (non OC) with 16GB of 2800MHz RAM with __64b python 3.8.1.__
+I'm running i5-4570 CPU (non OC) with 16GB of 2800MHz RAM with __64b python 3.8.1.__
 
 Obviously, I disabled `print(result)` because in most occasions, printing whole array takes a lot more than actually sorting it.
 
